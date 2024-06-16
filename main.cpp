@@ -317,7 +317,7 @@ int main(int argc, char *argv[])
             }
             else if (command_name == "cd")
             {
-                if (arguments.size() == 0)
+                if (arguments.empty())
                 {
                     std::cout << "cd: path required" << std::endl;
                 }
@@ -326,7 +326,7 @@ int main(int argc, char *argv[])
                     change_directory(arguments, current_path);
                 }
             } else if (command_name == "touch") {
-                if (arguments.size() == 0) {
+                if (arguments.empty()) {
                     std::cout << "touch: file name required" << std::endl;
                 } else {
                     std::string FILE_NAME = arguments[0];
